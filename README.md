@@ -1,7 +1,13 @@
-# Python Password Manager
+# Password Manager
 
-A simple local password manager written in Python and MariaDB. Uses [pbkdf2](https://en.wikipedia.org/wiki/PBKDF2) to derive a 256 bit key from a MASTER PASSWORD and DEVICE SECRET to use with AES-256 for encrypting/decrypting.
+This is a local password manager that allows you to securely store and manage your passwords. It is written in Python and uses MariaDB as the back-end database.
 
+# Features
+
+* Uses PBKDF2 to derive a 256-bit key from a master password and device secret
+* Uses AES-256 for encrypting and decrypting stored passwords
+* Local storage using MariaDB
+* Easy to use command-line interface
 
 # Installation
 You need to have python3 to run this on Windows, Linux or MacOS
@@ -34,9 +40,6 @@ CREATE USER 'pm'@localhost IDENTIFIED BY 'password';
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'pm'@localhost IDENTIFIED BY 'password';
 ```
-
-### Pyperclip
-[Pyperclip](https://pypi.org/project/pyperclip/) is a python module used to copy data to the clipboard. If you get a "not implemented error", follow this simple fix: https://pyperclip.readthedocs.io/en/latest/index.html#not-implemented-error
 
 ## Windows
 ### Install Python Requirements

@@ -9,6 +9,10 @@ This is a local password manager that allows you to securely store and manage yo
 * Local storage using MariaDB
 * Easy to use command-line interface
 
+# Security
+
+It is important to keep your master password and device secret secure. It is recommended to use a unique and strong password for the master password, and to use a different device secret for each device on which the password manager is used. This can help to protect against attacks that may try to use the same master password and device secret to gain access to the encrypted passwords on multiple devices.
+
 # Installation
 You need to have python3 to run this on Windows, Linux or MacOS
 ## Linux
